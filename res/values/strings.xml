@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TaintFlow</string>
+    <string name="spinner_label">换一换:</string>
+    <string name="seekbar_label">-->滑动</string>
+    <string name="title_activity_power">隐私类型</string>
+    <string name="title_activity_application">应用类型</string>
+    <string name="title_activity_connect_us">联系我们</string>
+    <string name="title_activity_show_chart">统计图表</string>
+    <string name="title_activity_app_detail">该应用涉及的隐私</string>
+    <string name="title_activity_power_detail">该隐私涉及的应用</string>
+    <string name="title_activity_taint_info">隐私详细信息</string>
+    <string name="DestIP">IP地址：</string>
+    <string name="Taint">隐私类型</string>
+    <string name="Timestamp">泄露时间：</string>
+    <string name="Data">具体数据：</string>
+
+</resources>

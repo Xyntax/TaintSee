@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:id="@+id/fl_chart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/fl_chart"
+        android:layout_toRightOf="@id/fl_chart"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+           
+
+            <ImageButton
+                android:id="@+id/show_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chart_all"
+                android:onClick="show_all" />
+             <TextView
+                android:id="@+id/tv_mark_all"
+                android:layout_width="5dp"
+                android:layout_height="120dp"
+                android:layout_alignLeft="@id/show_all"
+                android:background="@color/my_blue"
+                android:gravity="center_vertical" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1" >
+             <TextView 
+                android:id="@+id/tv_mark_week"
+                android:layout_width="5dp" 
+                android:layout_height="120dp"
+                android:background="@color/my_blue"
+                android:visibility="gone"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/week_chart"
+                android:onClick="show_week" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

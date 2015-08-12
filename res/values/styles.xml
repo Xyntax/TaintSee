@@ -1,0 +1,15 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="homeAsUpIndicator">@drawable/back</item>
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+    </style>
+
+    <style name="MyActionBarStyle"  parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@color/my_blue</item>
+    </style>
+
+</resources>

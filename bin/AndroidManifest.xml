@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.demo.taintsee"
+    android:versionCode="1"
+    android:versionName="1.0" >
+	<uses-permission
+		android:name="android.permission.READ_LOGS" />
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/taint_see_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+     
+        <activity
+             android:screenOrientation="portrait"
+            android:name="com.taintflow.connect_us"
+            android:label="@string/title_activity_connect_us"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <service
+            android:name="com.taintflow.Service.MyTaintDroidNotifyService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="MyTaintDroidNotifyService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.taintflow.Power_Activity"
+            android:label="@string/title_activity_power"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.taintflow.Application_Activity"
+            android:label="@string/title_activity_application"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.taintflow.EmptyActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.taintflow.App_DetailActivity"
+            android:label="@string/title_activity_app_detail"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.taintflow.Application_Activity" />
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.taintflow.TaintInfoActivity"
+            android:label="@string/title_activity_taint_info"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.taintflow.Power_DetailActivity"
+            android:label="@string/title_activity_power_detail"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.taintflow.Power_Activity" />
+        </activity>
+        <activity 
+            android:screenOrientation="landscape"
+            android:name="com.taintflow.chart_allActivity" >
+        </activity>
+        <activity 
+            android:screenOrientation="landscape"
+            android:name="com.taintflow.app_detail_chartActivity" >
+        </activity>
+    </application>
+
+</manifest>
